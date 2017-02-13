@@ -11,6 +11,8 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, selection, summary,
 time, mark, audio, video {
+    
+    list-style-type: none;
     margin: 0;
     padding: 0;
     border: 0;
@@ -41,4 +43,54 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color:silver;
+}
+
+a:hover {
+    color: teal;
+}
+
+h1, h2, h3, h4, h5, h6, p, nav, ul {
+    font-family:arial;
+}
+
+h1 {
+    font-size:2.5em;
+}
+
+.top {
+    position: fixed;
+    top:0;
+    right:0;
+    padding: 10px;
+}
+
+.main {
+    margin-left: 20px;
+    margin-top: 30px;
+    line-height: 50px;
+    float: left;
+}
+
+.social {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    ;
+}
+
+iframe {
+    width: 60%;
+    float:right;
+    padding-right: 190px;
+    padding-top: 50px; 
+}
+
 
