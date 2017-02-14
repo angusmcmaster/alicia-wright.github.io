@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Angus McMaster</title>
+     <link rel="stylesheet" href="assets/stylesheets/style.css">
+</head>
+
+<body>
+    <div id="splash">
+    <img class=tattoo src="assets/tattoosplash.png">
+    <p><a href="#" class="horse" onclick="NextSplash(); return false;"><img class=horsey src='assets/blackhorse.png'></a></p>
+    </div>
+
+    <div id="splash2">
+    <p><a href='#' class="presents" onclick="LastSplash(); return false;">angus mcmaster presents</a></p>
+    </div>
+
+    <div id="splash3">
+    <p><a href='menu.html' class="presents1">a world wide web experience</a></p>
+    </div>
+          
+          <script>
+          function NextSplash(){
+          document.getElementById('splash2').style.display = 'block';
+          document.getElementById('splash').style.display= 'none';
+          }
+          function LastSplash(){
+          document.getElementById('splash3').style.display = 'block';
+          document.getElementById('splash2').style.display = 'none';
+          }
+          function Init() {
+          document.getElementById('splash').style.display = 'block';
+          }
+          window.onload = Init;
+          </script>
+
+
+</body>
+</html>
